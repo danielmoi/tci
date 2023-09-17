@@ -12,7 +12,7 @@ const App: Component = () => {
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
         <a
-          class={styles.link}
+          class="text-3xl font-bold underline"
           href="https://github.com/solidjs/solid"
           target="_blank"
           rel="noopener noreferrer"
