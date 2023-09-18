@@ -3,6 +3,7 @@ import Eleveld from './Eleveld';
 
 import logo from './logo.svg';
 import styles from './App.module.css';
+import References from './References';
 
 const App: Component = () => {
   return (
@@ -10,6 +11,7 @@ const App: Component = () => {
       <header class={styles.header}>
         <Eleveld />
       </header>
+      <References />
     </div>
   );
 };
