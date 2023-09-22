@@ -8,6 +8,16 @@ function References () {
       <header class={styles.header}>
         <h2 class="mb-10">References</h2>
 
+        <div class="text-lg mb-20">The formulas being used have been extrapolated from the articles below:
+        <ul>
+          <li>BIS 60 = 4.0 - (age x 0.01) ie. 0.1 per decade of age</li>
+          <li>BIS 46 = 4.0 - (age x 0.02) ie. 0.2 per decade of age</li>
+        </ul>
+        </div>
+
+
+
+
         <div class="text-lg">
         1. <a href="https://pubmed.ncbi.nlm.nih.gov/29661412/" class="underline hover:text-slate-300" target="_blank">Eleveld DJ, Colin P, Absalom AR, Struys M. Pharmacokinetic-pharmacodynamic model for propofol for broad application in anaesthesia and sedation. Br J Anaesth. 2018;120(5):942-59.</a>
         </div>

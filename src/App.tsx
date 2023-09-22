@@ -5,11 +5,18 @@ import logo from './logo.svg';
 import styles from './App.module.css';
 import References from './References';
 
+const Sticky = () => {
+  return (
+    <div class="absolute bottom-0">⬇</div>
+  )
+}
+
 const App: Component = () => {
   return (
-    <div class={styles.App}>
+    <div class="text-center relative">
       <header class={styles.header}>
         <Eleveld />
+      <Sticky />
       </header>
       <References />
     </div>

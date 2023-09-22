@@ -1,4 +1,5 @@
 import { createSignal } from "solid-js";
+import ButtonSecondary from "./components/Button-Secondary";
 
 type HTMLElementEvent<T extends HTMLElement> = Event & {
   target: T;
@@ -8,7 +9,7 @@ function Eleveld() {
   const [count, setCount] = createSignal(1);
   const increment = () => setCount(count() + 1);
 
-  const [age, setAge] = createSignal('0');
+  const [age, setAge] = createSignal('30');
   const handleInput = (e: HTMLElementEvent<HTMLInputElement>) => {
     const val = (e.target.value);
     setAge(val);
@@ -17,10 +18,10 @@ function Eleveld() {
     return (2.2 - (Number(age()) * 0.01)).toFixed(1);
   }
   const getBIS46 = () => {
-    return (4.0 - (Number(age()) * 0.01)).toFixed(1);
+    return (4.0 - (Number(age()) * 0.02)).toFixed(1);
   }
 
-  const handleReset = () => setAge('0')
+  const handleReset = () => setAge('30')
 
   return (
     <div>
@@ -33,7 +34,7 @@ function Eleveld() {
       <div>BIS 46: {getBIS46()}</div>
 
       <div class="mt-10">
-        <button type="button" class="bg-slate-500 hover:bg-slate-700 text-white py-2 px-4 rounded" onClick={handleReset}>
+        <button type="button" class="text-lg bg-slate-500 hover:bg-slate-700 text-white py-2 px-4 rounded" onClick={handleReset}>
           Reset
         </button>
       </div>
