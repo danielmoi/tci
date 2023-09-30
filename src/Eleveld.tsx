@@ -37,9 +37,12 @@ function Eleveld() {
       <div>BIS 46: {getBIS46()}</div>
 
       <div class="mt-10">
-        <button type="button" class="text-lg bg-slate-500 hover:bg-slate-700 text-white py-2 px-4 rounded" onClick={handleReset}>
+        {/* <button type="button" class="text-lg bg-slate-500 hover:bg-slate-700 text-white py-2 px-4 rounded" onClick={handleReset}>
           Reset
-        </button>
+        </button> */}
+        <Button onClick={handleReset}>
+          Reset
+        </Button>
       </div>
     </div>
   );
