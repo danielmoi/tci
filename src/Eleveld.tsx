@@ -1,11 +1,14 @@
 import { createSignal } from "solid-js";
 import ButtonSecondary from "./components/Button-Secondary";
+import Button from "./components/Button";
+// import { Button,initTE } from "tw-elements";
 
 type HTMLElementEvent<T extends HTMLElement> = Event & {
   target: T;
 }
 
 function Eleveld() {
+  // initTE({ Button }, { allowReinits: true });
   const [count, setCount] = createSignal(1);
   const increment = () => setCount(count() + 1);
 
