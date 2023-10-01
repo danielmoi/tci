@@ -1,8 +1,5 @@
 import { createSignal } from "solid-js";
-import ButtonSecondary from "./components/Button-Secondary";
 import Button from "./components/Button";
-import Bold from './components/Bold'
-// import { Button,initTE } from "tw-elements";
 
 type HTMLElementEvent<T extends HTMLElement> = Event & {
   target: T;
@@ -38,9 +35,6 @@ function Eleveld() {
       <div class="mb-20">BIS 60: <span class="font-bold text-orange-500">{getBIS60()}</span> μg/mL</div>
 
       <div class="mt-10">
-        {/* <button type="button" class="text-lg bg-slate-500 hover:bg-slate-700 text-white py-2 px-4 rounded" onClick={handleReset}>
-          Reset
-        </button> */}
         <Button onClick={handleReset}>
           Reset
         </Button>
