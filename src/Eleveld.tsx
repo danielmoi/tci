@@ -33,8 +33,8 @@ function Eleveld() {
         Enter age:
         <input class="text-black ml-4 pl-4 w-24" type="number" onInput={handleInput} value={age()} size="5"/>
       </div>
-      <div>BIS 60: {getBIS60()}</div>
-      <div>BIS 46: {getBIS46()}</div>
+      <div>BIS 46: {getBIS46()} μg/mL</div>
+      <div>BIS 60: {getBIS60()} μg/mL</div>
 
       <div class="mt-10">
         {/* <button type="button" class="text-lg bg-slate-500 hover:bg-slate-700 text-white py-2 px-4 rounded" onClick={handleReset}>
