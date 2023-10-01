@@ -1,6 +1,7 @@
 import { createSignal } from "solid-js";
 import ButtonSecondary from "./components/Button-Secondary";
 import Button from "./components/Button";
+import Bold from './components/Bold'
 // import { Button,initTE } from "tw-elements";
 
 type HTMLElementEvent<T extends HTMLElement> = Event & {
@@ -28,13 +29,13 @@ function Eleveld() {
 
   return (
     <div>
-      <h1 class="mb-10">Eleveld Cet calculator</h1>
+      <h1 class="mb-10 text-4xl">Eleveld Cet calculator</h1>
       <div class="mb-10">
         Enter age:
         <input class="text-black ml-4 pl-4 w-24" type="number" onInput={handleInput} value={age()} size="5"/>
       </div>
-      <div>BIS 46: {getBIS46()} μg/mL</div>
-      <div>BIS 60: {getBIS60()} μg/mL</div>
+      <div class="mt-20 mb-8">BIS 46: <span class="font-bold text-green-500">{getBIS46()}</span> μg/mL</div>
+      <div class="mb-20">BIS 60: <span class="font-bold text-orange-500">{getBIS60()}</span> μg/mL</div>
 
       <div class="mt-10">
         {/* <button type="button" class="text-lg bg-slate-500 hover:bg-slate-700 text-white py-2 px-4 rounded" onClick={handleReset}>
