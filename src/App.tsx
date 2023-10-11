@@ -9,7 +9,7 @@ import References from './References';
 
 const Sticky = () => {
   return (
-    <div class="absolute bottom-0">
+    <div class="absolute bottom-2">
       <div class="text-lg">(more info)</div>
       <div>⬇</div>
     </div>
