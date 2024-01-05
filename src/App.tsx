@@ -22,7 +22,7 @@ const App: Component = () => {
     <div class="text-center relative">
       <header class={styles.header}>
         <Eleveld />
-      <Sticky />
+        <Sticky />
       </header>
       <References />
     </div>
